@@ -1,14 +1,15 @@
 /* ---------- Base ---------- */
 :root{
-  --bg:#0b1020;
-  --panel:#101935;
-  --card:#0f1a39;
-  --text:#e8ecf8;
-  --muted:#a9b4d6;
-  --accent:#6aa9ff;
-  --accent-2:#9b7bff;
-  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --bg:#fdfbff;        
+  --panel:#fffafc;     
+  --card:#ffffff;      
+  --text:#333333;     
+  --muted:#666666;    
+  --accent:#ff6f91;    
+  --accent-2:#87cefa;  
+  --shadow:0 6px 18px rgba(0,0,0,.1); 
 }
+
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
