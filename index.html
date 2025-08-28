@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mira's Portfolio</title>
+  <title>Mira | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
+
+  <!-- Navbar -->
   <header>
     <nav>
-      <h1>Mira</h1>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -18,113 +18,116 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#awards">Awards</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <img src="assets/profile.jpg" alt="Profile Picture">
-    <h2>Hi, I’m Mira 👋</h2>
-    <p>A passionate Software Engineering fresh graduate eager to build creative and practical solutions.</p>
-    <a href="#contact" class="btn">Get in Touch</a>
-  </section>
-
   <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I thrive on learning new tools and frameworks, enjoy challenges, and love collaborating in teams. My goal is to grow and contribute to impactful real-world projects.</p>
+  <section id="about" class="section">
+    <h1>Hi, I'm Mira 👋</h1>
+    <p>A passionate and driven Software Engineering graduate from UTM, eager to kickstart a career in tech. 
+    I thrive on learning new tools and frameworks, and enjoy building creative, practical solutions.</p>
   </section>
 
   <!-- Education -->
-  <section id="education">
+  <section id="education" class="section">
     <h2>Education</h2>
     <div class="card">
       <h3>Universiti Teknologi Malaysia (UTM), Skudai</h3>
-      <p>Bachelor of Computer Science (Software Engineering), 2022 – 2025</p>
-      <p><strong>CGPA:</strong> 3.71 | Dean’s List</p>
+      <p>Bachelor of Computer Science (Software Engineering), 2022–2025</p>
+      <p>CGPA: 3.71 | Dean’s List (2022/23-1, 2023/24-2)</p>
     </div>
     <div class="card">
       <h3>Universiti Teknologi Malaysia (UTM), Kuala Lumpur</h3>
-      <p>Diploma in Computer Science (Information Technology), 2019 – 2022</p>
-      <p><strong>CGPA:</strong> 3.89 | Dean’s List</p>
+      <p>Diploma in Computer Science (IT), 2019–2022</p>
+      <p>CGPA: 3.89 | Dean’s List</p>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
+  <!-- Work Experience -->
+  <section id="experience" class="section">
     <h2>Work Experience</h2>
     <div class="card">
       <h3>Programmer Intern – Authentic Ventures Sdn Bhd</h3>
       <p>Sept 2024 – Feb 2025</p>
       <ul>
-        <li>Resolved bugs, maintained system, developed features (VB.NET, Svelte, Azure DevOps).</li>
-        <li>Handled database migration & support tickets.</li>
+        <li>Resolved critical bugs, maintained system, and developed features (VB.NET, Svelte, Azure DevOps).</li>
+        <li>Managed support tickets and assisted in database migration tasks.</li>
       </ul>
     </div>
     <div class="card">
       <h3>Software Intern – Kube Native Sdn Bhd</h3>
       <p>Dec 2021 – Mar 2022</p>
       <ul>
-        <li>Developed Office Management System using Laravel.</li>
-        <li>Prepared User Acceptance Testing (UAT) documentation.</li>
+        <li>Developed an Office Management System using Laravel.</li>
+        <li>Prepared UAT documentation and participated in user requirement meetings.</li>
       </ul>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects">
+  <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="card">
-      <h3>UTMThrift</h3>
-      <p>Mobile Marketplace for thrifted items | Flutter + Laravel</p>
+      <h3>UTMThrift – Mobile Marketplace</h3>
+      <p>Final Year Project (2025). Mobile app for UTM students to buy & sell thrifted items.</p>
+      <a href="project-utmthrift.html" class="btn">View More</a>
     </div>
     <div class="card">
-      <h3>UTMCExp</h3>
-      <p>Facility booking system for UTM students | Laravel + MySQL</p>
-    </div>
-    <div class="card">
-      <h3>MobiTrainer (Hackathon 2024 Winner)</h3>
-      <p>AI-driven rehabilitation assistant for wheelchair users.</p>
+      <h3>UTMCExp – Campus Experience</h3>
+      <p>Facility booking system for UTM students (2023).</p>
+      <a href="project-utmcexp.html" class="btn">View More</a>
     </div>
   </section>
 
   <!-- Skills -->
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>HTML, PHP, CSS, MySQL</li>
-      <li>C++, Java, JavaScript, Laravel, Dart, Flutter</li>
-      <li>VB.NET, Svelte</li>
-      <li>GitHub, Figma, Azure DevOps</li>
-    </ul>
+    <div class="skills-grid">
+      <div><strong>Languages:</strong> HTML, PHP, CSS, MySQL (Advanced), C++, Java, JS, Laravel, Dart, Flutter</div>
+      <div><strong>Tools:</strong> VS Code, PhpMyAdmin, Postman, Firebase, Azure DevOps</div>
+      <div><strong>Others:</strong> Figma, Canva, Github, Xampp, Jira, Trello</div>
+    </div>
   </section>
 
   <!-- Awards -->
-  <section id="awards">
-    <h2>Awards</h2>
+  <section id="awards" class="section">
+    <h2>Awards & Achievements</h2>
     <div class="card">
       <h3>Microsoft AI APAC Hackathon 2024</h3>
-      <p>1st Place – MobiTrainer project</p>
+      <p>1st Place – Built “MobiTrainer”, an AI-driven rehab assistant for wheelchair users.</p>
+      <img src="images/hackathon.jpg" alt="Hackathon Award" class="award-img">
     </div>
     <div class="card">
-      <h3>Symposium Iskandar Puteri 2023</h3>
-      <p>Best Prototype Award</p>
+      <h3>Symposium Iskandar Puteri – Best Prototype 2023</h3>
+      <p>Low Carbon Monitoring System Prototype, in collaboration with local council.</p>
+      <img src="images/symposium.jpg" alt="Symposium Award" class="award-img">
     </div>
+  </section>
+
+  <!-- Leadership -->
+  <section id="leadership" class="section">
+    <h2>Leadership & Activities</h2>
+    <ul>
+      <li>🏆 1st Place, Consumer Dash Competition – UTM JB (2024)</li>
+      <li>🥈 Runner-Up, Gambut Explorace – UTM JB (2023)</li>
+      <li>👩‍💻 Committee Member, Symposium Iskandar Puteri Low Carbon (2023)</li>
+    </ul>
   </section>
 
   <!-- Contact -->
-  <section id="contact">
+  <section id="contact" class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:amirahathirahnazli@gmail.com">amirahathirahnazli@gmail.com</a></p>
-    <p>LinkedIn: <a href="#">https://www.linkedin.com/in/amirahathirahnazli/</a></p>
-    <p>GitHub: <a href="#">https://github.com/nuramirahathirahnazli</a></p>
+    <p>GitHub: <a href="https://github.com/nuramirahathirahnazli" target="_blank">github.com/nuramirahathirahnazli</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/amirahathirahnazli/" target="_blank">linkedin.com/in/amirahathirahnazli/</a></p>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Mira. All Rights Reserved.</p>
   </footer>
+
 </body>
 </html>
