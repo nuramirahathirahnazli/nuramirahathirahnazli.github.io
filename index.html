@@ -3,95 +3,238 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mira's Portfolio</title>
-  <style>
-    /* Reset */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; line-height: 1.6; }
-
-    /* Header */
-    header {
-      background: #4a90e2;
-      color: white;
-      text-align: center;
-      padding: 3rem 1rem;
-    }
-    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-    header p { font-size: 1.2rem; }
-
-    /* Sections */
-    section {
-      max-width: 900px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
-    section h2 {
-      margin-bottom: 1rem;
-      font-size: 1.8rem;
-      color: #4a90e2;
-      border-bottom: 2px solid #4a90e2;
-      display: inline-block;
-    }
-
-    /* Projects */
-    .project {
-      background: white;
-      margin: 1rem 0;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-    .project h3 { margin-bottom: 0.5rem; }
-
-    /* Contact */
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #222;
-      color: white;
-    }
-    footer a { color: #4a90e2; text-decoration: none; }
-  </style>
+  <title>Mira — Software Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Nur Amirah Athirah Nazli — Software Engineering graduate specializing in Flutter, Laravel, and full‑stack development." />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <h1>Hi, I'm Mira 👋</h1>
-    <p>Fresh Graduate in Computer Science (Software Engineering)</p>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="brand">Mira<span class="accent">.</span></a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#awards">Awards</a>
+        <a href="#leadership">Leadership</a>
+        <a href="#contact" class="btn small">Contact</a>
+      </nav>
+    </div>
   </header>
 
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Fresh Graduate • Software Engineering</p>
+        <h1>Hi, I'm <span class="accent">Mira</span> 👋</h1>
+        <p class="subtitle">
+          Passionate about building creative and practical solutions across mobile and web.
+          I enjoy learning new tools, collaborating in teams, and delivering real-world impact.
+        </p>
+        <div class="actions">
+          <a href="#projects" class="btn">See Projects</a>
+          <a href="#contact" class="btn ghost">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card">
+          <h3>Quick Facts</h3>
+          <ul>
+            <li>Degree CGPA: <strong>3.71</strong> (Dean’s List)</li>
+            <li>Diploma CGPA: <strong>3.89</strong> (Dean’s List)</li>
+            <li>Based in Malaysia (UTM)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- About -->
-  <section>
-    <h2>About Me</h2>
-    <p>I am passionate about mobile and web development, focusing on Flutter and Laravel. I enjoy building real-world applications and solving problems through software.</p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        A passionate and driven Software Engineering student from Universiti Teknologi Malaysia (UTM),
+        eager to kickstart a career in tech. I thrive on learning new tools and frameworks, and enjoy taking on
+        challenges that involve building creative and practical solutions. I work well under pressure, love
+        collaborating in teams, and am constantly looking for ways to grow and contribute to real-world projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section alt">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Universiti Teknologi Malaysia (UTM), Skudai, Johor Bahru</h3>
+            <p class="muted">Bachelor of Computer Science (Software Engineering) — <strong>Oct 2022 – Jul 2025</strong></p>
+            <ul>
+              <li>CGPA: <strong>3.71</strong></li>
+              <li>Dean’s List: 2022/2023 – 1, 2023/2024 – 2</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <h3>Universiti Teknologi Malaysia (UTM), Kuala Lumpur</h3>
+            <p class="muted">Diploma in Computer Science (Information Technology) — <strong>Jun 2019 – Jun 2022</strong></p>
+            <ul>
+              <li>CGPA: <strong>3.89</strong></li>
+              <li>Dean’s List Award</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Work Experience</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Programmer Intern — Authentic Ventures Sdn Bhd</h3>
+          <p class="muted">Sept 2024 – Feb 2025</p>
+          <ul>
+            <li>Resolved critical bugs, maintained systems, and developed new features based on client requests.</li>
+            <li>Worked with <strong>VB.NET</strong>, <strong>Svelte</strong>, and <strong>Azure DevOps</strong>.</li>
+            <li>Assisted database migration tasks and managed support tickets using Azure DevOps.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Software Intern — Kube Native Sdn Bhd</h3>
+          <p class="muted">Dec 2021 – Mar 2022</p>
+          <ul>
+            <li>Developed an Office Management System using <strong>Laravel</strong> as the main internship project.</li>
+            <li>Participated in user requirement meetings and prepared <strong>User Acceptance Testing (UAT)</strong> documentation.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
   </section>
 
   <!-- Projects -->
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>UTMThrift Marketplace App</h3>
-      <p>A thrift marketplace built with Flutter (mobile) and Laravel (web). Features seller verification, payment integration, and a review system.</p>
-      <p><a href="https://github.com/nuramirahathirahnazli/utmThrift-mobile" target="_blank">View Project</a></p>
-    </div>
-    <div class="project">
-      <h3>Another Project</h3>
-      <p>Short description about another project you want to highlight.</p>
-      <p><a href="#">View Project</a></p>
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>UTMThrift — Mobile Marketplace for Thrifted Items <span class="badge">2025</span></h3>
+          <p>Final Year Project (Projek Sarjana Muda). A marketplace for UTM students and committees to buy and sell thrifted items.</p>
+          <p class="muted">Tech: Flutter (mobile), Laravel (web), MySQL, Cloudinary</p>
+          <div class="links">
+            <a class="btn small" target="_blank" href="https://github.com/nuramirahathirahnazli/utmThrift-mobile">GitHub (Mobile)</a>
+            <a class="btn small ghost" target="_blank" href="https://github.com/nuramirahathirahnazli/utmThrift-web">GitHub (Web)</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>UTMCExp — UTM Campus Experience <span class="badge">2023</span></h3>
+          <p>Designed a facility booking system for UTM students to manage reservations across campus facilities.</p>
+          <p class="muted">Tech: (add details you used here)</p>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section>
-    <h2>Skills</h2>
-    <p>Dart • PHP • Java • Flutter • Laravel • MySQL • Git/GitHub • Cloudinary</p>
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-wrap">
+        <div>
+          <h4>Programming & Tech</h4>
+          <p><strong>Advanced:</strong> HTML, PHP, CSS, MySQL</p>
+          <p><strong>Intermediate:</strong> C++, Java, JavaScript, Laravel, Dart, VB.NET, Flutter</p>
+          <p><strong>Basic:</strong> Svelte, Servlets</p>
+        </div>
+        <div>
+          <h4>Editors & Tools</h4>
+          <p><strong>Advanced:</strong> VS Code, Notepad++, Visual Studio 2022, phpMyAdmin</p>
+          <p><strong>Intermediate:</strong> Spring Tool Suite, Postman, Firebase, Microsoft SQL Server Management</p>
+        </div>
+        <div>
+          <h4>Microsoft Office</h4>
+          <p><strong>Advanced:</strong> Word, PowerPoint</p>
+          <p><strong>Intermediate:</strong> Excel</p>
+        </div>
+        <div>
+          <h4>Others</h4>
+          <p><strong>Advanced:</strong> Figma, Canva, Draw.io, GitHub, XAMPP, Jira, Trello, CapCut</p>
+          <p><strong>Intermediate:</strong> StarUML, Android Studio, Azure DevOps, Tableau, Ubuntu, InShot, FilmoraGo</p>
+        </div>
+        <div>
+          <h4>Languages</h4>
+          <p>Malay — <strong>Advanced</strong></p>
+          <p>English — <strong>Intermediate</strong></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Awards -->
+  <section id="awards" class="section alt">
+    <div class="container">
+      <h2>Awards & Achievements</h2>
+      <ul class="awards">
+        <li>
+          <strong>1st Place — Microsoft AI APAC Hackathon 2024</strong> <span class="muted">• Jun 2024</span><br />
+          Developed “MobiTrainer”, a personalized AI-driven rehabilitation assistant for wheelchair users; recognized as the most innovative solution.
+        </li>
+        <li>
+          <strong>1st Best Prototype — Symposium Iskandar Puteri Low Carbon Monitoring System</strong> <span class="muted">• Jul 2023</span><br />
+          Recognized for building a prototype to support sustainable monitoring solutions in collaboration with local council.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Leadership -->
+  <section id="leadership" class="section">
+    <div class="container">
+      <h2>Leadership & Activities</h2>
+      <ul class="list">
+        <li><strong>1st Place</strong>, Consumer Dash Competition — UTM Johor Bahru <span class="muted">• Jun 2024</span></li>
+        <li><strong>Runner-Up</strong>, Gambut Explorace — UTM Johor Bahru <span class="muted">• Jul 2023</span></li>
+        <li><strong>Committee Member</strong>, Symposium Iskandar Puteri Low Carbon Monitoring & Management System — UTM Johor Bahru <span class="muted">• Jul 2023</span></li>
+      </ul>
+    </div>
   </section>
 
   <!-- Contact -->
-  <footer>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/nuramirahathirahnazli" target="_blank">github.com/nuramirahathirahnazli</a></p>
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>I'm open to full-time roles and internships in software engineering and full‑stack development.</p>
+      <div class="contact-grid">
+        <a class="card link" href="mailto:youremail@example.com">Email: youremail@example.com</a>
+        <a class="card link" target="_blank" href="https://github.com/nuramirahathirahnazli">GitHub: @nuramirahathirahnazli</a>
+        <a class="card link" target="_blank" href="https://www.linkedin.com/in/your-profile">LinkedIn: your-profile</a>
+        <a class="card link" href="#" title="Add your resume PDF to /assets and link here">Resume (PDF)</a>
+      </div>
+      <p class="muted small">Tip: replace your email/LinkedIn link above. Add a <code>cv.pdf</code> file in an <code>/assets</code> folder and link it.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Mira — Nur Amirah Athirah Nazli. Built with HTML & CSS. Hosted on GitHub Pages.</p>
+    </div>
   </footer>
+
+  <script>
+    // Update year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
