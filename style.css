@@ -545,9 +545,22 @@ nav a:not(.btn):hover:after {
 /* Contact */
 .contact .contact-grid{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
   gap:16px;
   margin-top:24px;
+}
+/* Medium screens (tablets) - 2 columns */
+@media (max-width: 992px) {
+  .contact .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small screens (mobile) - 1 column */
+@media (max-width: 576px) {
+  .contact .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .contact-card {
   display: flex;
@@ -650,4 +663,159 @@ nav a:not(.btn):hover:after {
   .btn.ghost {
     width: 100%;
   }
+}
+
+/* Video container styling */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Optional: Add a play button overlay for better UX */
+.video-container::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-container::after {
+  content: '▶';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+  font-size: 24px;
+  color: var(--accent);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.video-container:hover::before,
+.video-container:hover::after {
+  opacity: 1;
+}
+
+/* Awards section with image carousel */
+.award-item {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 30px;
+  padding: 24px;
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  align-items: center;
+}
+
+.award-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+.award-images {
+  width: 250px; /* was 180px */
+  flex-shrink: 0;
+  position: relative;
+}
+
+.image-carousel {
+  width: 100%;
+  height: 220px; /* was 180px */
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+.image-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.image-carousel img.active {
+  opacity: 1;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--muted);
+  opacity: 0.5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active, .dot:hover {
+  opacity: 1;
+  background: var(--accent);
+  transform: scale(1.2);
+}
+
+.award-content {
+  flex: 1;
+}
+
+/* Responsive design for awards */
+@media (max-width: 900px) {
+  .award-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .award-images {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+  
+  .image-carousel {
+    height: 200px;
+  }
+}
+
+/* Prevent body scrolling when menu is open */
+.no-scroll {
+  overflow: hidden;
 }
